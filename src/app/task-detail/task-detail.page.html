@@ -1,0 +1,143 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-row style="align-items: center;">
+      <div (click)="goBack()" style="padding: 10px">
+        <img src="../../assets/icon/back-button.svg" />
+      </div>
+      <div><ion-title class="titleHeader">Task Details</ion-title></div>
+      <div class="filterBackground" id="open-modal">
+        <ion-img src="../../../assets/filter-icon.svg"></ion-img>
+      </div>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" [class.container]="showMapBox===false" [class.containerHide]="showMapBox===true">
+  <ion-grid style="display: flex;">
+    <ion-row>
+      <ion-chip *ngFor="let item of selectedFiltersList" style="min-height: 32px; height: auto;">
+        <ion-label>{{item}}</ion-label>
+        <ion-icon name="close" (click)="deleteFilter(item)"></ion-icon>
+      </ion-chip>
+     </ion-row>
+  </ion-grid >
+  <div class="ticketHeadingWrapper">
+    <div style="display: flex">
+      <div class="houseHoldSelectDiv">
+        <ion-select (ionChange)="handleViewFilter($event)" class="ticketHeading" value="voter" interface="popover"
+          placeholder="Select Type">
+          <ion-select-option value="voter">Voter</ion-select-option>
+          <ion-select-option value="house_hold">House hold</ion-select-option>
+        </ion-select>
+        <ion-label class="ticketHeading"><span>{{totalVoters}}</span></ion-label>
+      </div>
+      <div class="houseHoldSelectDiv" *ngIf="!mapView">
+        <ion-select (ionChange)="handleOddEvenFilter($event)" class="ticketHeading" value="all" interface="popover"
+          placeholder="Select Odd/Even">
+          <ion-select-option value="all">All</ion-select-option>
+          <ion-select-option value="odd">Odd</ion-select-option>
+          <ion-select-option value="even">Even</ion-select-option>
+        </ion-select>
+      </div>
+    </div>
+    <div class="iconsDivWrapper">
+      <div class="listingIconDiv" (click)="showMap(false)">
+        <ion-img src="../../assets/listingIcon.svg"></ion-img>
+      </div>
+      <div *ngIf="isShowHouseHold" class="mapIconDiv" (click)="showMap(true)">
+        <ion-img src="../../assets/iconForMap.svg"></ion-img>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!isShowHouseHold && !mapView">
+    <div *ngFor="let voters of filteredVotersData; let indexNumber = index;" class="ticketWrapper">
+      <div class="voterNameAndEdit">
+      <ion-label class="voterName">{{voters?.first_name + " " + voters?.last_name}}</ion-label>
+      <div *ngIf="editPermission" class="editIcon" (click)="editVoterFormOpen(voters)"><img src="../../assets/edit.svg"/></div></div>
+      <div style="display: flex; flex-direction: row; align-items: center; margin-bottom: 10px;">
+      <ion-label (click)="openMap(voters)" class="voterAddress">{{voters?.address+' '+voters?.postal_code}}
+      </ion-label>
+      <div style="width: 10%;"><img src="../../assets/location.svg" style="width: 14px; margin-left: 6px"/></div>
+      </div>
+      <div class="ticketHeader">
+        <div class="statusWrapper">
+          <h3 class="ticketLabel">Status</h3>
+          <div (click)="ShowStatusList(voters?.id)" class="accordian">
+            <ion-label class="accordianLabel">{{voters?.task_status || "Status"}}</ion-label>
+            <ion-img class="accordianIcon" src='../../assets/grey-down-arrow.svg'></ion-img>
+          </div>
+          <div *ngIf="showStatusId === voters?.id" class="accordianList">
+            <div *ngFor="let list of accordianList; let i = index">
+              <ion-label (click)="ChangeStatus(list,voters?.id,indexNumber)"
+                class="accordianOption">{{list}}</ion-label>
+            </div>
+          </div>
+        </div>
+        <div class="contactIconsWrapper">
+          <a *ngIf="voters?.cellphone !== ''" (click)="startChat(voters?.cellphone)" class="percentVoting">
+            <img src="../../assets/whatsapp.svg" height="30px" /></a>
+          <a *ngIf="voters?.landline !== ''" href="tel:{{voters?.landline}}"  class="percentVoting">
+            <img src="../../assets/telephone.svg" height="18px" /></a>
+          <a *ngIf="voters?.cellphone !== ''" href="tel:{{voters?.cellphone}}" class="percentVoting">
+            <img src="../../assets/phone-white-icon.svg" /></a>
+        </div>
+      </div>
+      <div style="display: flex;flex-wrap: wrap;">
+        <div *ngFor="let item of voters?.attributeData; let attributeIndex = index" class="chipsWrapper">
+          <app-chips (click)="updateAttributes(item,voters?.id,attributeIndex,indexNumber)" tag={{item?.attr_name}}
+            status={{item?.status}} activeBGColor="{{item?.click_bcolor}}" activeTextColor={{item?.click_tcolor}}
+            defaultBGColor={{item?.defult_bcolor}} defaultTextColor={{item?.defult_tcolor}}></app-chips>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="isShowHouseHold && !mapView">
+    <div *ngFor="let voters of filteredVotersData; let indexNumber = index;" class="ticketWrapper"
+      (click)="showAllVoters(voters)">
+      <ion-label class="voterAddress">{{voters?.address}}</ion-label>
+      <ion-label class="totalVotersData">Voters {{voters?.totalVoters}}</ion-label>
+    </div>
+  </div>
+  <div class="mapView" *ngIf="isShowHouseHold && mapView">
+    <div #map id="map" class="map"></div>
+  </div>
+  <ion-img *ngIf="!mapView" slot="fixed" (click)="scrollToTop()" class="bottomToTopBtn" src="../../../assets/buttomToTop.svg"></ion-img>
+</ion-content>
+
+<ion-modal trigger="open-modal" (willDismiss)="onWillDismiss($event)">
+  <ng-template>
+    <ion-content>
+      <div>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-button (click)="cancel()">Close</ion-button>
+          </ion-buttons>
+          <ion-title>Filter</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="confirm()" [strong]="true">Confirm</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </div>
+
+      <div style="display: flex;">
+        <ion-list style="border-right: 0.5px solid #C2CFFF;width: 45%;overflow: scroll;">
+          <div class="filterWrapper">
+            <ion-label *ngFor="let Option of filteredData; let i = index"
+              [class.activeFilterOption]="parentActiveOption === i" class="filterOption"
+              (click)="viewSubFilterFunc(Option, i)">{{Option?.label_name}}</ion-label>
+          </div>
+        </ion-list>
+        <div style="margin: 0.5rem 1rem; width: calc(100% - 45%);" *ngIf="viewSubFilter">
+          <div *ngFor="let item of chipsTags" class="appChipsTags">
+            <div *ngFor="let chips of item?.value">
+              <app-chips (click)="selectSubFilter(item?.key,chips)"
+                [tag]="chips" [status]="selectedFilters?.[item?.key]?.includes(chips) ? '1' : '0'"></app-chips>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ion-button (click)="removeFilters()" size="small">Remove All Filters</ion-button>
+    </ion-content>
+  </ng-template>
+</ion-modal>

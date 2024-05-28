@@ -1,0 +1,467 @@
+.filterBox {
+    width: 92%;
+    border-radius: 7px;
+    border: 0.5px solid #AEC0FF;
+    margin: 15px auto;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    position       : relative;
+
+    .filetrImage{
+        background-image: '../../assets/filter-icon.svg';
+    }
+
+    .addressInput {
+        min-height: 2rem;
+        display: flex;
+    }
+
+    .addBtn {
+        background: #2196F3;
+        color: white;
+        font-size: 1rem;
+        padding: 0.5rem;
+        border-radius: 10px;
+        z-index: 0;
+    }
+
+    .filterBackgroundWrapper {
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        .filterBackground {
+            background-color: #2196F3;
+            width: 38px;
+            height: 38px;
+            border: 0.5px solid #2196F3;
+            border-radius: 6px;
+            justify-content: center;
+            display: flex;
+
+            ion-img {
+                width: 20px;
+            }
+        }
+
+        .filterByText {
+            font-size: 14px;
+            font-family: Poppins-Regular;
+            line-height: 21px;
+            color: #000;
+            margin: 0px 0px 0px 10px;
+            text-align: center;
+        }
+    }
+
+    .datePopover {
+        left            : 0;
+        background-color: #fff;
+        box-shadow      : 0px 4px 40px rgba(0, 166, 231, 0.11);
+        z-index         : 9;
+        display: flex;
+        align-items: center;
+        // width           : 100%;
+
+        .filterBackground {
+            background-image: '../../assets/filter-icon.svg';
+            background-color: #2196F3;
+            width           : 2rem;
+            height          : 2rem;
+            border          : 0.5px solid #2196F3;
+            border-radius   : 6px;
+            justify-content : center;
+            display         : inline-flex;
+
+            ion-img {
+              width: 20px;
+            }
+          }
+
+        .showDateCalender {
+            background-color: #fff;
+            display         : unset;
+        }
+
+        .hideCalender {
+            display: none;
+        }
+
+    }
+
+    .showCalenderIcon {
+        display: unset;
+        width: 20px !important;
+    }
+
+    .hideCalenderIcon {
+        display: none;
+        width: 20px !important;
+    }
+
+    .dateInput {
+        width: 30%;
+        font-size: 13px;
+        font-family: Poppins-Regular;
+        line-height: 20px;
+        color: #575757;
+    }
+}
+
+
+.cardWrapper {
+    width: 92%;
+    margin: 20px auto;
+    border-radius: 7px;
+    border: 0.5px solid #AEC0FF;
+    padding: 12px;
+
+    .dateWrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .dataText {
+            font-family: Poppins-Regular;
+            font-size: 14px;
+            line-height: 21px;
+            color: #454545;
+        }
+    }
+
+    .taskType {
+        background: #E7ECFF;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+        margin: 0 0 0.75rem 0;
+        .chart-title{
+            font-size: 1rem;
+            line-height: 22.5px;
+            font-family: Poppins-Medium;
+            margin: 0;
+            color: #000;
+            font-weight: 400;
+            span {
+                color: #000;
+                font-weight: 600;
+            }
+          
+        }
+        .chartLabel {
+            font-size: 1rem;
+            line-height: 22.5px;
+            font-family: Poppins-Medium;
+            color: #6B6B6B;
+            font-weight: 400;
+            span{
+                margin: 0;
+                margin-top: 5px !important;
+                width: fit-content;
+                padding: 2px 10px;
+                border: 1px solid #6B6B6B;
+                color: #6B6B6B;
+                border-radius: 5px;
+            }
+        
+      }
+    }
+
+
+
+    .chartDescriptionShow {
+        font-size            : 13px;
+        line-height          : 23px;
+        color                : #8B8B8B;
+        font-family          : Poppins-Medium;
+        overflow             : hidden;
+        text-overflow        : ellipsis;
+
+        span {
+            font-size: 13px;
+            line-height: 23px;
+            color: #2196F3;
+            font-family: Poppins-Medium;
+        }
+    }
+
+    .accordianWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .chartLabel {
+            font-size: 1rem;
+            line-height: 18.5px;
+            font-family: Poppins-Medium;
+            color: #000;
+        }
+
+        .accordian {
+            border: none;
+            width: 50%;
+
+            .accordianLabel {
+                font-size: 13px;
+                line-height: 19.5px;
+                color: #6B6B6B;
+                font-family: Poppins-Medium;
+                text-align: end;
+
+                span {
+                    font-size: 13px;
+                    line-height: 19.5px;
+                    color: #2196F3;
+                    font-family: Poppins-Medium;
+                }
+            }
+        }
+    }
+
+    .ticketHeading {
+        font-size: 15px;
+        line-height: 17px;
+        font-family: Poppins-Medium;
+        color: #000;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+    }
+
+    .ticketWrapper {
+        width           : 100%;
+        margin          : 12px auto;
+        border-radius   : 15px;
+        // border          : 1px solid #DFE6FF;
+        // padding         : 15px;
+        align-items: center;
+        justify-content: center;
+
+        .ticketHeader {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline ;
+            .total-voters{
+              font-size: 13px;
+              font-family: Poppins-Medium;
+              color: #6B6B6B;
+              .total-voters-number{
+                color: #2196F3;
+              }
+            }
+
+            .ticketLabel {
+                margin: 0 0 1rem 0;
+                font-size: 15px;
+                font-family: Poppins-Medium;
+                line-height: 20px;
+                color: #000;
+            }
+
+            .percentVoting {
+                display            : flex;
+                flex-direction: row;
+                justify-content    : center;
+                align-items        : center;
+                background-color   : #E8F5FF;
+                width              : 30px;
+                height             : 30px;
+                border-radius      : 50%;
+                .labels{
+                  font-size: 13px;
+                }
+                .percentVotingText {
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: #444444;
+                }
+
+                .buttons{
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                }
+
+            }}
+
+
+        .areaWrapper {
+            background: #F1F4FF;
+            border-radius: 10px;
+            padding: 11px;
+            display: flex;
+
+            .areaName {
+                font-size: 12px;
+                line-height: 20px;
+                color: #636363;
+                font-family: Poppins-Regular;
+                margin: 0px;
+                span {
+                    display: block;
+                    font-size: 12px;
+                    line-height: 20px;
+                    font-family: Poppins-Regular;
+                    color: #2196F3;
+                    margin-left: 3px;
+                }
+            }
+        }
+
+        .chipsWrapper {
+            width              : 96%;
+            background-color   : #fff;
+            display            : flex;
+            flex-wrap: wrap;
+
+            .areaChips {
+                max-height      : 40px;
+                border-radius   : 30px;
+                border          : 1px solid #E9E9E9;
+                background-color: #fff;
+                display         : flex;
+                align-items     : center;
+                padding         : 13px;
+                margin: 5px;
+
+                .areaChipslabel {
+                    font-size  : 12px;
+                    line-height: 15px;
+                    color      : #000;
+                    font-family: Poppins-Regular;
+                    display: inline-block;
+                }
+
+            }
+            .selectedAreaChips {
+                max-height      : 40px;
+                border-radius   : 30px;
+                border          : 1px solid #E9E9E9;
+                background-color: #2196F3;
+                display         : flex;
+                align-items     : center;
+                padding         : 13px;
+                margin: 5px;
+            .areaChipslabel{
+                font-size  : 12px;
+                line-height: 15px;
+                color      : #fff;
+                font-family: Poppins-Regular;
+                display: inline-block;
+            }}
+        }
+
+        .selectOptionWrapper {
+            width           : 96%;
+            border-radius   : 10px;
+            display         : flex;
+
+            .selectOption {
+                width: 100%;
+                padding: 0px 15px;
+                background: #FFFFFF;
+                border: 1px solid #E9E9E9;
+                border-radius: 30px;
+                margin: 0px;
+            }
+        }
+
+        .viewMoreBtnWrapper {
+            width: 96%;
+            background: linear-gradient(178.89deg, rgba(255, 255, 255, 0) 0.95%, #FFFFFF 56.73%);
+            border-radius: 6px;
+
+            .viewMoreBtn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                ion-label {
+                    font-size  : 13px;
+                    line-height: 20px;
+                    font-family: Poppins-Medium;
+                    color: #2196F3;
+                    margin: 0px;
+                }
+
+                ion-img {
+                    width      : 10px;
+                    height     : 5px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+.readMoreText {
+    font-size: 13px;
+    line-height: 20px;
+    font-family: Poppins-Medium;
+    color: #2196F3;
+}
+
+canvas.chart {
+    height: 150px !important;
+    width: 150px !important;
+    margin: 0;
+}
+
+.chartMainDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+
+    .percentageData {
+        text-align: center;
+        background: #FFFFFF;
+        box-shadow: 0px 3px 34px rgba(33, 150, 243, 0.25);
+        border-radius: 8px;
+        padding: 8px;
+        color: #6A6A6A;
+        font-size: 14px;
+    }
+}
+
+.filterWrapper{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+
+    .filterOption{
+      font-size: 14px;
+      line-height: 20px;
+      color: #010101;
+      font-family: Poppins-Regular;
+      padding: 12px 30px;
+      border-bottom: 0.5px solid #C2CFFF;
+      border-width: 100%;
+      width: 100%;
+    }
+    .activeFilterOption{
+      background: #C2CFFF;
+    }
+  }
+
+  .volunteerEmptyMessage {
+    padding: 1rem;
+    border: 1px solid red;
+    margin: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    font-family: Poppins-Regular;
+  }
+
+
+  .titleHeader {
+    font-size: var(--font-4);
+    font-family: Poppins-Regular;
+    text-transform: capitalize;
+    color: #2196f3;
+    position: absolute;
+    justify-self: center;
+    text-align: center;
+    font-weight: 500;
+  }

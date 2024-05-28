@@ -1,0 +1,107 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="titleHeader">Task</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <div class="filterBox" *ngIf="filteredTaskData?.length">
+
+    <ion-item class="filetrImage">
+      <ion-select justify="start" (ionChange)="optionSelect($event)" placeholder="Select Type Filter">
+        <ion-select-option *ngFor="let optionList of taskTypeFilter">{{optionList}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <div class="datePopover">
+
+      <ion-datetime [class.showDateCalender]="showCalender===true" [class.hideCalender]="showCalender===false"
+        id="datePicker" (ionChange)="onDateSelected($event)" presentation="date" [max]="currentDate"
+        display-format="DD/MM/YYYY" (ionCancel)="onCancel()" value="selectedDate" [(ngModel)]="selectedDate"
+        [showDefaultButtons]="true">
+      </ion-datetime>
+    </div>
+
+    <ion-item (click)="openDatePicker()">
+      <ion-label>{{ selectedDate || initialDate() }}</ion-label>
+    </ion-item>
+  </div>
+  <div class="filterBox" *ngIf="filteredTaskData?.length || spinner">
+    <ion-img (click)="getCurrentLocation()" src="../../assets/location.svg" style="width: 1rem; margin-right: 6px">
+    </ion-img>
+    <ion-input #autoComplete placeholder="Current working address" class="addressInput"></ion-input>
+    <ion-buttons class="addBtn" (click)="updateAddress()">Update</ion-buttons>
+  </div>
+  <div class="cardWrapper" *ngFor="let tasks of filteredTaskData">
+    <div class="dateWrapper">
+      <p class="dataText">{{dateFormat(tasks?.Taskdetails[0]?.created_at)}}</p>
+    </div>
+    <ion-text class="taskType" (click)="setVoterUpdatePermission(tasks.partnerVolunteer)">
+      <h5 class="chart-title">
+        Task Name : <span>{{tasks?.Taskdetails[0]?.tasks_name}}</span>
+      </h5>
+
+      <h4 class="chartLabel">Task Type : 
+        <span>{{tasks?.Taskdetails[0]?.tasktype}}</span>
+      </h4>
+      <div style="display: flex;justify-content: flex-end;" [routerLink]="['/task-detail', tasks?.task_id ]">
+      <ion-button size="small">View voters</ion-button></div>
+    </ion-text>
+    <ion-label span (click)="showDescription(tasks?.task_id)" class="chartDescriptionShow"
+      [innerHtml]="show && showId === tasks?.task_id ? setItem(tasks?.Taskdetails[0]?.tasks_description) : setItem(tasks?.Taskdetails[0]?.tasks_description.slice(0, 140))">
+    </ion-label>
+    <span *ngIf="tasks?.Taskdetails[0]?.tasks_description?.length > 140" (click)="showDescription(tasks?.task_id)"
+      class="readMoreText">{{show && showId === tasks?.task_id ? 'Read
+      Less':'Read More'}}</span>
+
+    <div>
+      <div class="accordianWrapper">
+        <ion-label class="chartLabel">Voter Status</ion-label>
+        <ion-label class="chartDescriptionShow">Voters <span>{{tasks?.Voter}}</span></ion-label>
+      </div>
+      <div class="chartMainDiv">
+        <div class="percentageData">{{(100 - tasks?.taskresult || 100) | number:'1.2-2'}}%</div>
+        <canvas baseChart class="chart" [data]="updateDoughnutChartData(tasks?.taskresult || 0)"
+          [type]="doughnutChartType" [options]="chartOptions"></canvas>
+        <div class="percentageData">{{(tasks?.taskresult || 0) | number:'1.2-2'}}%</div>
+      </div>
+    </div>
+    <div>
+      <h3 class="ticketHeading">Partner Volunteers</h3>
+      <div *ngFor="let ticket of sortById(tasks?.partnerVolunteer); let i = index" class="ticketWrapper">
+        <div class="ticketHeader">
+          <h3 class="ticketLabel">{{ticket.volunteerName}}</h3>
+         <div style="display: flex; column-gap: 10px;">
+           <a *ngIf="ticket?.phoneNumber && ticket?.vol_user_id !== userId" href="tel:+{{ticket?.phoneNumber}}" class="percentVoting"><img src="../../assets/phone-icon.svg" /></a>
+           <div *ngIf="ticket?.phoneNumber && ticket?.vol_user_id !== userId" class="percentVoting" (click)="startChat(ticket?.phoneNumber)">
+             <img src="../../assets/whatsapp.svg" /></div>
+           <div *ngIf="ticket?.email && ticket?.vol_user_id !== userId" class="percentVoting"><img src="../../assets/message-icon.svg" /></div>
+         </div>
+        </div>
+          <div class="buttons">
+          </div>
+        <div class="areaWrapper">
+          <div>
+            <ion-label class="areaName">
+              <span>Currently Working On</span>
+            </ion-label>
+            <ion-label class="areaName">{{ticket.Workinglocation}}</ion-label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="filteredTaskData?.length === 0" class="volunteerEmptyMessage">
+    <p>
+      You are not volunteer of any candidate. Contact Your campaign Manager to add Your Email id in Volunteer.
+    </p>
+  </div>
+</ion-content>
+<ion-toast [duration]="5000" [isOpen]="toastIsOpen" [message]="toastMessage" [color]="color"></ion-toast>
+<div *ngIf="spinner" class="spinner">
+  <ion-spinner name="lines-sharp"></ion-spinner>
+</div>
+

@@ -1,0 +1,38 @@
+.areaChips {
+    // max-height      : 40px;
+    border-radius   : 5px;
+    border          : 1px solid #C2CFFF;
+    // background-color: #fff;
+    padding         : 13px;
+    display         : flex;
+    align-items     : center;
+    flex-wrap       : wrap;
+
+    // margin: 0px;
+    .areaChipslabel {
+        font-size  : 12px;
+        line-height: 15px;
+        // color      : #000;
+        font-family: Poppins-Regular;
+    }
+}
+
+.selectedAreaChips {
+    // margin          : 8px;
+    // max-height      : 40px;
+    border-radius   : 5px;
+    border          : 1px solid #C2CFFF;
+    // background-color: #2196F3;
+    padding         : 13px;
+    display         : flex;
+    align-items     : center;
+    flex-wrap       : wrap;
+
+    // margin: 0px;
+    .areaChipslabel {
+        font-size  : 12px;
+        line-height: 15px;
+        // color      : #fff;
+        font-family: Poppins-Regular;
+    }
+}

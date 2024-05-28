@@ -1,0 +1,401 @@
+.container {
+    display: unset;
+
+    .ticketHeadingWrapper {
+        background: #F9F9F9;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding   : 5px 10px;
+
+        .houseHoldSelectDiv {
+            display: flex;
+            align-items: center;
+        }
+
+        .ticketHeading {
+            font-size  : 14px;
+            line-height: 23px;
+            font-family: Poppins-Regular;
+            color      : #7D7D7D;
+            margin: 0 8px;
+        }
+        span {
+            font-size: 14px;
+            line-height: 23px;
+            color: #2196F3;
+            font-family: Poppins-Regular;
+        }
+
+        .statsDiv{
+            display: flex;
+            align-items: center;
+            margin-right: 5px;
+            p{
+                font-family: Poppins-Regular;
+                color: var(--white);
+                background: var(--secondary);
+                font-size: var(--font-2);
+                cursor: pointer;
+                padding: 8px;
+                border-radius: 10px;
+                margin: 0;
+            }
+        }
+    }
+
+    .ticketWrapper {
+        width           : 94%;
+        // height       : 100px;
+        margin          : 20px auto;
+        border-radius   : 15px;
+        border          : 1px solid #DFE6FF;
+        padding         : 22px;
+
+        .voterNameAndEdit {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            .editIcon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color   : #E8F5FF;
+                width              : 30px;
+                height             : 30px;
+                border-radius      : 50%;
+                cursor: pointer;
+            }
+        }
+
+        .voterName {
+            font-size  : 15px;
+            line-height: 23px;
+            color      : #000;
+            font-family: Poppins-Medium;
+            display    : block;
+            // margin     : 0px 0px 9px 0px;
+        }
+
+        .voterAddress {
+            display: flex !important;
+            font-size    : 14px;
+            line-height  : 23px;
+            color        : #2196F3;
+            font-family  : Poppins-Medium;
+            display      : block;
+            width: 90%;
+            // margin-bottom: 15px;
+        }
+
+        .totalVotersData {
+            font-size  : 13px;
+            line-height: 16px;
+            color      : #8B8B8B;
+            font-family: Poppins-Regular;
+        }
+
+        .ticketHeader {
+            display        : flex;
+            justify-content: space-between;
+            align-items    : center;
+            position       : relative;
+
+            .statusWrapper {
+                display        : flex;
+                position       : relative;
+                justify-content: center;
+
+                .ticketLabel {
+                    font-size  : 15px;
+                    font-family: Poppins-Medium;
+                    line-height: 20px;
+                    color      : #2196F3;
+                    margin     : 0px;
+                }
+
+                .accordian {
+                    display    : flex;
+                    align-items: center;
+                    margin-left: 10px;
+
+                    .accordianLabel {
+                        font-size  : 13px;
+                        line-height: 16px;
+                        color      : #8B8B8B;
+                        font-family: Poppins-Regular;
+                    }
+
+                    .accordianIcon {
+                        width      : 8px;
+                        height     : 4px;
+                        margin-left: 9px;
+                    }
+                }
+
+                .accordianList {
+                    position        : absolute;
+                    background-color: #fff;
+                    display         : flex;
+                    flex-direction  : column;
+                    z-index         : 999;
+                    width           : 128px;
+                    border-radius   : 7px;
+                    box-shadow      : 0px 4px 34px rgba(33, 150, 243, 0.2);
+                    justify-content : center;
+                    align-items     : center;
+                    margin-top      : 25px;
+                    padding         : 14px;
+
+                    .accordianOption {
+                        font-size  : 13px;
+                        line-height: 35px;
+                        color      : #404040;
+                    }
+                }
+
+            }
+
+            // .votersCount {
+            //     font-size  : 13px;
+            //     line-height: 20px;
+            //     font-family: DmSans-Medium;
+            //     color      : #6B6B6B;
+
+            //     span {
+            //         font-size  : 13px;
+            //         line-height: 20px;
+            //         font-family: DmSans-Medium;
+            //         color      : #2196F3;
+            //         margin-left: 3px;
+            //     }
+            // }
+            .contactIconsWrapper {
+                display: flex;
+
+                .percentVoting {
+                    display            : flex;
+                    justify-content    : center;
+                    align-items        : center;
+                    background-color   : #2196F3;
+                    // padding         : 7px;
+                    width              : 30px;
+                    height             : 30px;
+                    border-radius      : 50%;
+                    margin             : 5px;
+
+                    // .percentVotingText {
+                    //     font-size  : 13px;
+                    //     line-height: 16px;
+                    //     color      : #444444;
+                    // }
+                }
+            }
+        }
+
+        .areaWrapper {
+            width        : 96%;
+            background   : #F1F4FF;
+            border-radius: 10px;
+            padding      : 11px;
+            display      : flex;
+            flex-wrap: wrap;
+
+            .areaName {
+                font-size  : 12px;
+                line-height: 20px;
+                color      : #636363;
+                font-family: DmSans-Regular;
+                margin     : 0px;
+            }
+        }
+
+        .chipsWrapper {
+            margin: 0.75rem 0.75rem 0 0;
+            background-color   : #fff;
+            display            : flex;
+            flex-wrap: wrap;
+
+            .areaChips {
+                margin          : 8px;
+                max-height      : 40px;
+                border-radius   : 5px;
+                border          : 1px solid #C2CFFF;
+                background-color: #fff;
+                padding         : 13px;
+                display         : flex;
+                align-items     : center;
+
+                // margin: 0px;
+                .areaChipslabel {
+                    font-size  : 12px;
+                    line-height: 15px;
+                    color      : #000;
+                    font-family: DmSans-Regular;
+                }
+            }
+            .selectedAreaChips {
+                margin          : 8px;
+                max-height      : 40px;
+                border-radius   : 5px;
+                border          : 1px solid #C2CFFF;
+                background-color: #2196F3;
+                padding         : 13px;
+                display         : flex;
+                align-items     : center;
+
+                // margin: 0px;
+                .areaChipslabel {
+                    font-size  : 12px;
+                    line-height: 15px;
+                    color      : #fff;
+                    font-family: Poppins-Regular;
+                }
+            }
+
+
+        }
+
+        .selectOptionWrapper {
+            width           : 96%;
+            // background   : #F1F4FF;
+            border-radius   : 10px;
+            // padding      : 11px;
+            display         : flex;
+
+            .selectOption {
+                width        : 100%;
+                padding      : 0px 15px;
+                background   : #FFFFFF;
+                border       : 1px solid #E9E9E9;
+                border-radius: 30px;
+                margin       : 0px;
+            }
+        }
+
+        .viewMoreBtnWrapper {
+            width        : 96%;
+            background   : linear-gradient(178.89deg, rgba(255, 255, 255, 0) 0.95%, #FFFFFF 56.73%);
+            border-radius: 6px;
+
+            .viewMoreBtn {
+                display        : flex;
+                justify-content: center;
+                align-items    : center;
+
+                ion-label {
+                    font-size  : 13px;
+                    line-height: 20px;
+                    font-family: DmSans-Medium;
+                    color      : #2196F3;
+                    margin     : 0px;
+                }
+
+                ion-img {
+                    width      : 10px;
+                    height     : 5px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+.containerHide{
+    display: none;
+}
+.mapCotainer{
+    display: unset;
+}
+
+  .bottomToTopBtn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .mapView{
+    padding: 20px;
+  .map{
+    margin-top: 20px;
+    min-height: 100%;
+    height: 72vh;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+.iconsDivWrapper {
+  display        : flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .listingIconDiv {
+      width           : 36px;
+      height          : 36px;
+      background-color: #fff;
+      padding         : 7px;
+      border          : 0.5px solid #EBEBEB;
+      border-radius   : 6px;
+  }
+
+  .mapIconDiv {
+      width           : 36px;
+      height          : 36px;
+      background-color: #fff;
+      padding         : 7px;
+      margin-left     : 5px;
+      border          : 0.5px solid #EBEBEB;
+      border-radius   : 6px;
+  }
+}
+.titleHeader {
+    font-size: var(--font-4);
+    font-family: Poppins-Regular;
+    text-transform: capitalize;
+    color: #2196f3;
+    position: initial;
+    justify-self: center;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .filterBackground {
+    background-color: #2196F3;
+    width: 2rem;
+    height: 2rem;
+    border: 0.5px solid #2196F3;
+    border-radius: 6px;
+    justify-content: center;
+    display: flex;
+
+    ion-img {
+      width: 20px;
+    }
+  }
+
+  .filterWrapper {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+  
+    .filterOption {
+      font-size: 14px;
+      line-height: 20px;
+      color: #010101;
+      font-family: Poppins-Regular;
+      padding: 12px 30px;
+      border-bottom: 0.5px solid #C2CFFF;
+      border-width: 100%;
+      width: 100%;
+    }
+  
+    .activeFilterOption {
+      background: #C2CFFF;
+    }
+  }
+  .appChipsTags{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+  }

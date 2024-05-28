@@ -1,0 +1,534 @@
+{
+    "data":
+        {
+            "12": [
+                {
+                    "id": 1976774,
+                    "ward": 56,
+                    "subdivision": "54654",
+                    "last_name": "Sharma",
+                    "first_name": "Shyam",
+                    "address": "29, 200 Feet Bypass Rd, Brijlalpura, Jaipur, Rajasthan, India",
+                    "street_name": "200 Feet Bypass Rd, Brijlalpura, Jaipur, Rajasthan, India",
+                    "street_no": "29",
+                    "unit": null,
+                    "city": "Jaipur",
+                    "province": null,
+                    "postal_code": "302021",
+                    "cellphone": null,
+                    "landline": null,
+                    "longitude": "121.0069531",
+                    "latitude": "14.9369375",
+                    "task_status": "Visited",
+                    "attributeData": [
+                        {
+                            "id": 181,
+                            "attr_slug": "sign_large",
+                            "attr_name": "Sign - Large",
+                            "click_bcolor": "#0091ff",
+                            "click_tcolor": "#ffffff",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#004cff",
+                            "status": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 1976773,
+                    "ward": 78,
+                    "subdivision": "78",
+                    "last_name": "Tiwari",
+                    "first_name": "Raj",
+                    "address": "78, 302006, Railway, Station Rd, Gopalbari, Jaipur, Rajasthan 302006, India",
+                    "street_name": "302006, Railway, Station Rd, Gopalbari, Jaipur, Rajasthan 302006, India",
+                    "street_no": "78",
+                    "unit": "78",
+                    "city": "Jaipur",
+                    "province": null,
+                    "postal_code": "302006",
+                    "cellphone": "7878787878",
+                    "landline": "7878787878",
+                    "longitude": "75.7967927",
+                    "latitude": "26.9216189",
+                    "task_status": null,
+                    "attributeData": [
+                        {
+                            "id": 181,
+                            "attr_slug": "sign_large",
+                            "attr_name": "Sign - Large",
+                            "click_bcolor": "#0091ff",
+                            "click_tcolor": "#ffffff",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#004cff",
+                            "status": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1976772,
+                    "ward": 34,
+                    "subdivision": "34",
+                    "last_name": "data",
+                    "first_name": "data123",
+                    "address": "34, 61, Jalan Sultan, City Centre, 50000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia",
+                    "street_name": "61, Jalan Sultan, City Centre, 50000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia",
+                    "street_no": "34",
+                    "unit": "34",
+                    "city": "Kuala Lumpur",
+                    "province": null,
+                    "postal_code": "50000",
+                    "cellphone": "3434343434",
+                    "landline": "3434343434",
+                    "longitude": "101.6987275",
+                    "latitude": "3.1431509",
+                    "task_status": null,
+                    "attributeData": [
+                        {
+                            "id": 181,
+                            "attr_slug": "sign_large",
+                            "attr_name": "Sign - Large",
+                            "click_bcolor": "#0091ff",
+                            "click_tcolor": "#ffffff",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#004cff",
+                            "status": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 1976764,
+                    "ward": 45,
+                    "subdivision": "34",
+                    "last_name": "Suthar",
+                    "first_name": "Bhagwan",
+                    "address": "34, Jodhpur Char Rasta, Suryapooja Block B, Satellite, Ahmedabad, Gujarat 380015, India",
+                    "street_name": "Jodhpur Char Rasta, Suryapooja Block B, Satellite, Ahmedabad, Gujarat 380015, India",
+                    "street_no": "34",
+                    "unit": "34",
+                    "city": "Ahmedabad",
+                    "province": null,
+                    "postal_code": "380015",
+                    "cellphone": "4545454545",
+                    "landline": "4545454545",
+                    "longitude": "72.5283881",
+                    "latitude": "23.0263255",
+                    "task_status": null,
+                    "attributeData": [
+                        {
+                            "id": 181,
+                            "attr_slug": "sign_large",
+                            "attr_name": "Sign - Large",
+                            "click_bcolor": "#0091ff",
+                            "click_tcolor": "#ffffff",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#004cff",
+                            "status": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1839577,
+                    "ward": 24,
+                    "subdivision": "47",
+                    "last_name": "AARDEMA",
+                    "first_name": "JORDENE",
+                    "address": "3400 EGLINTON AVE E 1005",
+                    "street_name": "EGLINTON AVE E",
+                    "street_no": "3400",
+                    "unit": "1005",
+                    "city": "SCARBOROUGH",
+                    "province": "ON",
+                    "postal_code": "M1J2H8",
+                    "cellphone": "",
+                    "landline": "",
+                    "longitude": "-79.2130857",
+                    "latitude": "43.745155",
+                    "task_status": null,
+                    "attributeData": [
+                        {
+                            "id": 181,
+                            "attr_slug": "sign_large",
+                            "attr_name": "Sign - Large",
+                            "click_bcolor": "#0091ff",
+                            "click_tcolor": "#ffffff",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#004cff",
+                            "status": 0
+                        }
+                    ]
+                }
+            ],
+            "10": [
+                {
+                    "id": 1976775,
+                    "ward": 28,
+                    "subdivision": null,
+                    "last_name": "Wick",
+                    "first_name": "Mitty",
+                    "address": "401 401 Weber St N, Waterloo, ON N2J 3J2, Canada",
+                    "street_name": "401 Weber St N, Waterloo, ON N2J 3J2, Canada",
+                    "street_no": "401",
+                    "unit": null,
+                    "city": "Waterloo",
+                    "province": null,
+                    "postal_code": "N2J 3J2",
+                    "cellphone": null,
+                    "landline": null,
+                    "longitude": "-80.5255258",
+                    "latitude": "43.484341",
+                    "task_status": null,
+                    "attributeData": [
+                        {
+                            "id": 168,
+                            "attr_slug": "sign_large",
+                            "attr_name": "Sign - Large",
+                            "click_bcolor": "#0091ff",
+                            "click_tcolor": "#ffffff",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#004cff",
+                            "status": 1
+                        },
+                        {
+                            "id": 169,
+                            "attr_slug": "sign_small",
+                            "attr_name": "Sign small",
+                            "click_bcolor": "#09e123",
+                            "click_tcolor": "#ffffff",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#000000",
+                            "status": 1
+                        },
+                        {
+                            "id": 170,
+                            "attr_slug": "not_supporting",
+                            "attr_name": "Not Supporting",
+                            "click_bcolor": "#490ff5",
+                            "click_tcolor": "#dbd2d2",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#000000",
+                            "status": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 1976752,
+                    "ward": 28,
+                    "subdivision": "1",
+                    "last_name": "paliwal",
+                    "first_name": "Ankit",
+                    "address": "1 94,Hanuman vatika,near GDC club,200fit by pass, Ajmer Rd, Rajni Vihar, Heerawala, Jaipur, Rajasthan 302021, India",
+                    "street_name": "94,Hanuman vatika,near GDC club,200fit by pass, Ajmer Rd, Rajni Vihar, Heerawala, Jaipur, Rajasthan 302021, India",
+                    "street_no": "1",
+                    "unit": "1",
+                    "city": "Jaipur",
+                    "province": null,
+                    "postal_code": "302021",
+                    "cellphone": "8947885580",
+                    "landline": null,
+                    "longitude": "75.7332655",
+                    "latitude": "26.8882971",
+                    "task_status": "Visited",
+                    "attributeData": [
+                        {
+                            "id": 168,
+                            "attr_slug": "sign_large",
+                            "attr_name": "Sign - Large",
+                            "click_bcolor": "#0091ff",
+                            "click_tcolor": "#ffffff",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#004cff",
+                            "status": 1
+                        },
+                        {
+                            "id": 169,
+                            "attr_slug": "sign_small",
+                            "attr_name": "Sign small",
+                            "click_bcolor": "#09e123",
+                            "click_tcolor": "#ffffff",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#000000",
+                            "status": 1
+                        },
+                        {
+                            "id": 170,
+                            "attr_slug": "not_supporting",
+                            "attr_name": "Not Supporting",
+                            "click_bcolor": "#490ff5",
+                            "click_tcolor": "#dbd2d2",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#000000",
+                            "status": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 1902574,
+                    "ward": 24,
+                    "subdivision": "20",
+                    "last_name": "YOGATHASAN",
+                    "first_name": "YOTHIKA",
+                    "address": "6 BARLOW RD",
+                    "street_name": "BARLOW RD",
+                    "street_no": "6",
+                    "unit": "",
+                    "city": "SCARBOROUGH",
+                    "province": "ON",
+                    "postal_code": "M1G2B4",
+                    "cellphone": "",
+                    "landline": "4162898971",
+                    "longitude": "-79.2223153",
+                    "latitude": "43.7687881",
+                    "task_status": "Supporter",
+                    "attributeData": [
+                        {
+                            "id": 168,
+                            "attr_slug": "sign_large",
+                            "attr_name": "Sign - Large",
+                            "click_bcolor": "#0091ff",
+                            "click_tcolor": "#ffffff",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#004cff",
+                            "status": 0
+                        },
+                        {
+                            "id": 169,
+                            "attr_slug": "sign_small",
+                            "attr_name": "Sign small",
+                            "click_bcolor": "#09e123",
+                            "click_tcolor": "#ffffff",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#000000",
+                            "status": 0
+                        },
+                        {
+                            "id": 170,
+                            "attr_slug": "not_supporting",
+                            "attr_name": "Not Supporting",
+                            "click_bcolor": "#490ff5",
+                            "click_tcolor": "#dbd2d2",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#000000",
+                            "status": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 1899586,
+                    "ward": 24,
+                    "subdivision": "20",
+                    "last_name": "VIGNESWARAN",
+                    "first_name": "KANAGARATNAM",
+                    "address": "19 BARLOW RD",
+                    "street_name": "BARLOW RD",
+                    "street_no": "19",
+                    "unit": "",
+                    "city": "SCARBOROUGH",
+                    "province": "ON",
+                    "postal_code": "M1G2B5",
+                    "cellphone": "",
+                    "landline": "",
+                    "longitude": "-79.2221475",
+                    "latitude": "43.7697311",
+                    "task_status": "Supporter",
+                    "attributeData": [
+                        {
+                            "id": 168,
+                            "attr_slug": "sign_large",
+                            "attr_name": "Sign - Large",
+                            "click_bcolor": "#0091ff",
+                            "click_tcolor": "#ffffff",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#004cff",
+                            "status": 0
+                        },
+                        {
+                            "id": 169,
+                            "attr_slug": "sign_small",
+                            "attr_name": "Sign small",
+                            "click_bcolor": "#09e123",
+                            "click_tcolor": "#ffffff",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#000000",
+                            "status": 0
+                        },
+                        {
+                            "id": 170,
+                            "attr_slug": "not_supporting",
+                            "attr_name": "Not Supporting",
+                            "click_bcolor": "#490ff5",
+                            "click_tcolor": "#dbd2d2",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#000000",
+                            "status": 0
+                        }
+                    ]
+                }
+            ],
+            "1": [
+                {
+                    "id": 70621,
+                    "ward": 1,
+                    "subdivision": "11",
+                    "last_name": "ZOZAN",
+                    "first_name": "YOUNAN",
+                    "address": "18 PANORAMA CRT 1707",
+                    "street_name": "PANORAMA CRT",
+                    "street_no": "18",
+                    "unit": "1707",
+                    "city": "ETOBICOKE",
+                    "province": "ON",
+                    "postal_code": "M9V3Z8",
+                    "cellphone": "",
+                    "landline": "4167476282",
+                    "longitude": "-79.5818534",
+                    "latitude": "43.7471784",
+                    "task_status": "moved",
+                    "attributeData": [
+                        {
+                            "id": 147,
+                            "attr_slug": "sign_large",
+                            "attr_name": "Sign - Large",
+                            "click_bcolor": "#0091ff",
+                            "click_tcolor": "#ffffff",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#004cff",
+                            "status": 1
+                        },
+                        {
+                            "id": 148,
+                            "attr_slug": "sign_small",
+                            "attr_name": "Sign small",
+                            "click_bcolor": "#09e123",
+                            "click_tcolor": "#ffffff",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#000000",
+                            "status": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 70620,
+                    "ward": 1,
+                    "subdivision": "11",
+                    "last_name": "ZOZAN",
+                    "first_name": "YOUKHANNA",
+                    "address": "18 PANORAMA CRT 1707",
+                    "street_name": "PANORAMA CRT",
+                    "street_no": "18",
+                    "unit": "1707",
+                    "city": "ETOBICOKE",
+                    "province": "ON",
+                    "postal_code": "M9V3Z8",
+                    "cellphone": "",
+                    "landline": "",
+                    "longitude": "-79.5818534",
+                    "latitude": "43.7471784",
+                    "task_status": "Visited",
+                    "attributeData": [
+                        {
+                            "id": 147,
+                            "attr_slug": "sign_large",
+                            "attr_name": "Sign - Large",
+                            "click_bcolor": "#0091ff",
+                            "click_tcolor": "#ffffff",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#004cff",
+                            "status": 1
+                        },
+                        {
+                            "id": 148,
+                            "attr_slug": "sign_small",
+                            "attr_name": "Sign small",
+                            "click_bcolor": "#09e123",
+                            "click_tcolor": "#ffffff",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#000000",
+                            "status": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 70593,
+                    "ward": 1,
+                    "subdivision": "11",
+                    "last_name": "ZORA",
+                    "first_name": "FAWZIYA",
+                    "address": "46 PANORAMA CRT 704",
+                    "street_name": "PANORAMA CRT",
+                    "street_no": "46",
+                    "unit": "704",
+                    "city": "ETOBICOKE",
+                    "province": "ON",
+                    "postal_code": "M9V4A4",
+                    "cellphone": "",
+                    "landline": "",
+                    "longitude": "-79.5782512",
+                    "latitude": "43.7479203",
+                    "task_status": "Supporter",
+                    "attributeData": [
+                        {
+                            "id": 147,
+                            "attr_slug": "sign_large",
+                            "attr_name": "Sign - Large",
+                            "click_bcolor": "#0091ff",
+                            "click_tcolor": "#ffffff",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#004cff",
+                            "status": 1
+                        },
+                        {
+                            "id": 148,
+                            "attr_slug": "sign_small",
+                            "attr_name": "Sign small",
+                            "click_bcolor": "#09e123",
+                            "click_tcolor": "#ffffff",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#000000",
+                            "status": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 70562,
+                    "ward": 1,
+                    "subdivision": "11",
+                    "last_name": "ZLATANOVA",
+                    "first_name": "OLGA",
+                    "address": "46 PANORAMA CRT 1103",
+                    "street_name": "PANORAMA CRT",
+                    "street_no": "46",
+                    "unit": "1103",
+                    "city": "ETOBICOKE",
+                    "province": "ON",
+                    "postal_code": "M9V4A4",
+                    "cellphone": "",
+                    "landline": "4167428791",
+                    "longitude": "-79.5782512",
+                    "latitude": "43.7479203",
+                    "task_status": "Visited",
+                    "attributeData": [
+                        {
+                            "id": 147,
+                            "attr_slug": "sign_large",
+                            "attr_name": "Sign - Large",
+                            "click_bcolor": "#0091ff",
+                            "click_tcolor": "#ffffff",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#004cff",
+                            "status": 1
+                        },
+                        {
+                            "id": 148,
+                            "attr_slug": "sign_small",
+                            "attr_name": "Sign small",
+                            "click_bcolor": "#09e123",
+                            "click_tcolor": "#ffffff",
+                            "defult_bcolor": "#ffffff",
+                            "defult_tcolor": "#000000",
+                            "status": 1
+                        }
+                    ]
+                }
+            ]
+        }
+}

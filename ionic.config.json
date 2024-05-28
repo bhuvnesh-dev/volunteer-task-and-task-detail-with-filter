@@ -1,0 +1,7 @@
+{
+  "name": "volunteer-task-detail-with-filter",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,4 @@
+<div [class.areaChips]="status === '0'" [class.selectedAreaChips]="status === '1'" 
+[ngStyle]="{'background-color': getBGColor(),'color': getTextColor()}">
+  <ion-label class="areaChipslabel">{{tag}}</ion-label>
+</div>

@@ -1,0 +1,296 @@
+{
+    "success": true,
+    "data": {
+        "12": [
+            {
+                "label_name": "Ward",
+                "key": "ward",
+                "value": [
+                    1,
+                    23,
+                    24,
+                    34,
+                    45,
+                    56,
+                    63,
+                    65,
+                    78,
+                    98
+                ]
+            },
+            {
+                "label_name": "Street Name",
+                "key": "street_name",
+                "value": [
+                    "117, Ajmer Rd, Civil Lines, Jaipur, Rajasthan 302006, India",
+                    "200 Feet Bypass Rd, Brijlalpura, Jaipur, Rajasthan, India",
+                    "302006, Railway, Station Rd, Gopalbari, Jaipur, Rajasthan 302006, India",
+                    "61, Jalan Sultan, City Centre, 50000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia",
+                    "Airport Rd, Sanganer, Jaipur, Rajasthan 302029, India",
+                    "BENSHIRE DR",
+                    "Civil Airport Road, Air Force Area, 7372+Q6F, Ratanada, Jodhpur, Rajasthan 342011, India",
+                    "EGLINTON AVE E",
+                    "FORDWICH CRES",
+                    "GRANGEWAY AVE",
+                    "Jodhpur Char Rasta, Suryapooja Block B, Satellite, Ahmedabad, Gujarat 380015, India",
+                    "KINGSTON RD",
+                    "LAWRENCE AVE E",
+                    "LEE CENTRE DR",
+                    "MARKHAM RD",
+                    "MID PINES RD",
+                    "PILOT ST",
+                    "SCARBOROUGH GOLF CLUB RD"
+                ]
+            },
+            {
+                "label_name": "Street No.",
+                "key": "street_no",
+                "value": [
+                    "102",
+                    "12",
+                    "18",
+                    "19",
+                    "29",
+                    "3233",
+                    "3380",
+                    "34",
+                    "3400",
+                    "3967",
+                    "4",
+                    "4010",
+                    "4301",
+                    "4305",
+                    "63",
+                    "64",
+                    "68",
+                    "7",
+                    "751",
+                    "78",
+                    "865",
+                    "93",
+                    "98"
+                ]
+            },
+            {
+                "label_name": "City",
+                "key": "city",
+                "value": [
+                    "Ahmedabad",
+                    "ETOBICOKE",
+                    "Jaipur",
+                    "Jodhpur",
+                    "Kuala Lumpur",
+                    "SCARBOROUGH",
+                    "Toronto"
+                ]
+            },
+            {
+                "label_name": "Postal Code",
+                "key": "postal_code",
+                "value": [
+                    "302006",
+                    "302021",
+                    "302029",
+                    "302032",
+                    "342011",
+                    "380015",
+                    "50000",
+                    "L6A5B3",
+                    "M1E2C5",
+                    "M1E2M9",
+                    "M1E2N1",
+                    "M1E2R4",
+                    "M1G1J4",
+                    "M1G1S2",
+                    "M1G2L7",
+                    "M1H0A1",
+                    "M1H1M5",
+                    "M1H2A8",
+                    "M1H3H5",
+                    "M1J2H8",
+                    "M1J3L6",
+                    "M1J3N6",
+                    "M5J 1E6",
+                    "M9W2T3"
+                ]
+            },
+            {
+                "label_name": "Province",
+                "key": "province",
+                "value": [
+                    "ON"
+                ]
+            },
+            {
+                "label_name": "Subdivision",
+                "key": "subdivision",
+                "value": [
+                    "19",
+                    "25",
+                    "256",
+                    "3",
+                    "32",
+                    "34",
+                    "36",
+                    "40",
+                    "41",
+                    "47",
+                    "54",
+                    "54654",
+                    "6",
+                    "63",
+                    "65",
+                    "78",
+                    "98"
+                ]
+            }
+        ],
+        "10": [
+            {
+                "label_name": "Ward",
+                "key": "ward",
+                "value": [
+                    24,
+                    28
+                ]
+            },
+            {
+                "label_name": "Street Name",
+                "key": "street_name",
+                "value": [
+                    "401 Weber St N, Waterloo, ON N2J 3J2, Canada",
+                    "94,Hanuman vatika,near GDC club,200fit by pass, Ajmer Rd, Rajni Vihar, Heerawala, Jaipur, Rajasthan 302021, India",
+                    "BARLOW RD"
+                ]
+            },
+            {
+                "label_name": "Street No.",
+                "key": "street_no",
+                "value": [
+                    "1",
+                    "17",
+                    "18",
+                    "19",
+                    "20",
+                    "21",
+                    "23",
+                    "25",
+                    "27",
+                    "3",
+                    "4",
+                    "401",
+                    "5",
+                    "6",
+                    "8"
+                ]
+            },
+            {
+                "label_name": "City",
+                "key": "city",
+                "value": [
+                    "Jaipur",
+                    "SCARBOROUGH",
+                    "Waterloo"
+                ]
+            },
+            {
+                "label_name": "Postal Code",
+                "key": "postal_code",
+                "value": [
+                    "302021",
+                    "M1G2B3",
+                    "M1G2B4",
+                    "M1G2B5",
+                    "M1G2B6",
+                    "N2J 3J2"
+                ]
+            },
+            {
+                "label_name": "Province",
+                "key": "province",
+                "value": [
+                    "ON"
+                ]
+            },
+            {
+                "label_name": "Subdivision",
+                "key": "subdivision",
+                "value": [
+                    "1",
+                    "20"
+                ]
+            }
+        ],
+        "1": [
+            {
+                "label_name": "Ward",
+                "key": "ward",
+                "value": [
+                    1
+                ]
+            },
+            {
+                "label_name": "Street Name",
+                "key": "street_name",
+                "value": [
+                    "FORDWICH CRES",
+                    "PANORAMA CRT"
+                ]
+            },
+            {
+                "label_name": "Street No.",
+                "key": "street_no",
+                "value": [
+                    "18",
+                    "3",
+                    "40",
+                    "46",
+                    "5",
+                    "50"
+                ]
+            },
+            {
+                "label_name": "City",
+                "key": "city",
+                "value": [
+                    "ETOBICOKE"
+                ]
+            },
+            {
+                "label_name": "Postal Code",
+                "key": "postal_code",
+                "value": [
+                    "L4Y3B2",
+                    "L6P2L5",
+                    "L6P2R7",
+                    "L6P4L5",
+                    "L6R2Z3",
+                    "L6S4V7",
+                    "L7A5A7",
+                    "M9V3Z8",
+                    "M9V4A4",
+                    "M9V4A9",
+                    "M9V4M1",
+                    "M9W2T2",
+                    "N8R1S1"
+                ]
+            },
+            {
+                "label_name": "Province",
+                "key": "province",
+                "value": [
+                    "ON"
+                ]
+            },
+            {
+                "label_name": "Subdivision",
+                "key": "subdivision",
+                "value": [
+                    "11",
+                    "41"
+                ]
+            }
+        ]
+    },
+    "message": "Successfully"
+}

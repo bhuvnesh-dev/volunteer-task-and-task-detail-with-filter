@@ -1,0 +1,177 @@
+{
+    "success": true,
+    "data": {
+      "status": 200,
+      "taskdata": [
+        {
+          "task_id": 12,
+          "Taskdetails": [
+            {
+              "id": 12,
+              "create_id": 100,
+              "candidate_id": null,
+              "campaign_id": null,
+              "volunteer_id": "305,402",
+              "tasks_type": "1",
+              "attributes_name": "2",
+              "tasks_name": "fordwich steet",
+              "tasks_description": "<p>Ask the voter this current issues and the solutions which they want to imply at their area. Let them know what we have planned for them.</p>",
+              "position": 0,
+              "created_at": "2023-06-09T11:39:20.000000Z",
+              "updated_at": "2023-06-26T10:31:18.000000Z",
+              "tasktype": "Door to door"
+            }
+          ],
+          "partnerVolunteer": [
+            {
+              "task_id": 12,
+              "vol_user_id": 305,
+              "volunteerName": "Bhagwan Sahay",
+              "Workinglocation": "Jaipur, Rajasthan, India",
+              "permission": 1,
+              "phoneNumber": "918209863217"
+            },
+            {
+              "task_id": 12,
+              "vol_user_id": 402,
+              "volunteerName": "ankit star",
+              "Workinglocation": "94,Hanuman vatika,near GDC club,200fit by pass, Ajmer Rd, Rajni Vihar, Heerawala, Jaipur, Rajasthan 302021, India",
+              "permission": 1,
+              "phoneNumber": "8947885580"
+            }
+          ],
+          "Voter": 5,
+          "taskresult": "36.84"
+        },
+        {
+          "task_id": 10,
+          "Taskdetails": [
+            {
+              "id": 10,
+              "create_id": 100,
+              "candidate_id": null,
+              "campaign_id": null,
+              "volunteer_id": "305,367,395,402,405,398",
+              "tasks_type": "1",
+              "attributes_name": "2,3,6",
+              "tasks_name": "Promote Voting awareness",
+              "tasks_description": "<p>Your Vote Matters: Make a Difference Today!</p>\r\n\r\n<ol>\r\n\t<li>\r\n\t<p><span style=\"color:#1abc9c\"><strong>Introduction:</strong></span></p>\r\n\r\n\t<ul>\r\n\t\t<li>Every vote counts: Emphasize that voting is not just a right but a powerful tool for individuals to shape the future of their communities and country.</li>\r\n\t\t<li>Democracy in action: Describe how voting is the cornerstone of a functioning democracy, allowing citizens to have a say in the decisions that affect their lives.</li>\r\n\t</ul>\r\n\t</li>\r\n\t<li>\r\n\t<p><span style=\"color:#3498db\">Know Your Rights:</span></p>\r\n\r\n\t<ul>\r\n\t\t<li>Highlight voter rights: Educate users about their rights as voters, such as non-discrimination, accessibility, and assistance provisions.</li>\r\n\t\t<li>Legal protections: Inform users about laws that safeguard their voting rights and provide resources for reporting any violations.</li>\r\n\t</ul>\r\n\t</li>\r\n\t<li>\r\n\t<p><span style=\"color:#f1c40f\">Voter Registration:</span></p>\r\n\r\n\t<ul>\r\n\t\t<li>Register to participate: Encourage users to register to vote and provide a step-by-step guide on how to register, including online registration options.</li>\r\n\t\t<li>Eligibility requirements: Clarify who is eligible to vote and explain any identification or residency requirements.</li>\r\n\t</ul>\r\n\t</li>\r\n\t<li>\r\n\t<p><span style=\"color:#e74c3c\">Research Candidates and Issues:</span></p>\r\n\r\n\t<ul>\r\n\t\t<li>Informed decision-making: Stress the importance of researching candidates and understanding their positions on key issues.</li>\r\n\t\t<li>Reliable sources: Provide links to trustworthy resources that offer unbiased information about candidates&#39; backgrounds, policy positions, and voting records.</li>\r\n\t</ul>\r\n\t</li>\r\n\t<li>\r\n\t<p><strong>Get Out The Vote (GOTV) Campaigns:</strong></p>\r\n\r\n\t<ul>\r\n\t\t<li>Spread the word: Encourage users to become advocates for voting by sharing information about upcoming elections and the importance of voting on social media platforms.</li>\r\n\t\t<li>Organize events: Promote voter registration drives, community forums, and candidate debates to engage and mobilize voters.</li>\r\n\t</ul>\r\n\t</li>\r\n\t<li>\r\n\t<p><span style=\"color:#2c3e50\">Election Reminders and Polling Information:</span></p>\r\n\r\n\t<ul>\r\n\t\t<li>Stay on track: Offer users&nbsp;</li>\r\n\t</ul>\r\n\t</li>\r\n</ol>\r\n\r\n<p><button></button></p>",
+              "position": 0,
+              "created_at": "2023-06-06T11:40:21.000000Z",
+              "updated_at": "2023-06-15T15:16:58.000000Z",
+              "tasktype": "Door to door"
+            }
+          ],
+          "partnerVolunteer": [
+            {
+              "task_id": 10,
+              "vol_user_id": 305,
+              "volunteerName": "Bhagwan Sahay",
+              "Workinglocation": "Jaipur, Rajasthan, India",
+              "permission": 1,
+              "phoneNumber": "918209863217"
+            },
+            {
+              "task_id": 10,
+              "vol_user_id": 367,
+              "volunteerName": "ap testr",
+              "Workinglocation": "",
+              "permission": 0,
+              "phoneNumber": null
+            },
+            {
+              "task_id": 10,
+              "vol_user_id": 395,
+              "volunteerName": "monu sharma",
+              "Workinglocation": "",
+              "permission": 0,
+              "phoneNumber": null
+            },
+            {
+              "task_id": 10,
+              "vol_user_id": 402,
+              "volunteerName": "ankit star",
+              "Workinglocation": "94,Hanuman vatika,near GDC club,200fit by pass, Ajmer Rd, Rajni Vihar, Heerawala, Jaipur, Rajasthan 302021, India",
+              "permission": 1,
+              "phoneNumber": "8947885580"
+            },
+            {
+              "task_id": 10,
+              "vol_user_id": 405,
+              "volunteerName": "voluneer deleted and added",
+              "Workinglocation": "H Cross, Karnataka, India",
+              "permission": 1,
+              "phoneNumber": null
+            },
+            {
+              "task_id": 10,
+              "vol_user_id": 398,
+              "volunteerName": "manu manu",
+              "Workinglocation": "403, Okay Plus DP Metro, New Sanganer Road, Sodala,, Ganesh Nagar, Ramnagar, Jaipur, Rajasthan 302001, India",
+              "permission": 0,
+              "phoneNumber": null
+            }
+          ],
+          "Voter": 4,
+          "taskresult": "34.62"
+        },
+        {
+          "task_id": 1,
+          "Taskdetails": [
+            {
+              "id": 1,
+              "create_id": 100,
+              "candidate_id": null,
+              "campaign_id": null,
+              "volunteer_id": "305,374,402,405",
+              "tasks_type": "2",
+              "attributes_name": "2,3",
+              "tasks_name": "Sign Locate",
+              "tasks_description": "<p>It is a long established <span style=\"color:#2ecc71\">fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#39;Content here, content here&#39;, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search fo</span>r &#39;lorem ipsum&#39; will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>",
+              "position": 0,
+              "created_at": "2023-06-05T15:18:25.000000Z",
+              "updated_at": "2023-06-14T13:31:06.000000Z",
+              "tasktype": "Sign Locate"
+            }
+          ],
+          "partnerVolunteer": [
+            {
+              "task_id": 1,
+              "vol_user_id": 305,
+              "volunteerName": "Bhagwan Sahay",
+              "Workinglocation": "Jaipur, Rajasthan, India",
+              "permission": 1,
+              "phoneNumber": "918209863217"
+            },
+            {
+              "task_id": 1,
+              "vol_user_id": 374,
+              "volunteerName": "Tarun Johnson",
+              "Workinglocation": "",
+              "permission": 0,
+              "phoneNumber": null
+            },
+            {
+              "task_id": 1,
+              "vol_user_id": 402,
+              "volunteerName": "ankit star",
+              "Workinglocation": "94,Hanuman vatika,near GDC club,200fit by pass, Ajmer Rd, Rajni Vihar, Heerawala, Jaipur, Rajasthan 302021, India",
+              "permission": 1,
+              "phoneNumber": "8947885580"
+            },
+            {
+              "task_id": 1,
+              "vol_user_id": 405,
+              "volunteerName": "voluneer deleted and added",
+              "Workinglocation": "H Cross, Karnataka, India",
+              "permission": 1,
+              "phoneNumber": null
+            }
+          ],
+          "Voter": 4,
+          "taskresult": "1.37"
+        }
+      ]
+    },
+    "message": "Data get successfully."
+  }
